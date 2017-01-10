@@ -1,6 +1,35 @@
 # Price Formatter
 
-[TODO. There will be project description]
+Thank you for using my script for formatting prices! 
+
+# Description
+
+Script gets a price as input and formats it beautifully, adding spaces between thousands and showing 
+2 digits after dot if they exist:
+<pre>
+3213123
+3 213 123
+---------
+2313123.123123
+2 313 123.12
+</pre>
+If script can't handle input data it returns None:
+<pre>
+asdasd
+None
+</pre>
+
+# Installation
+
+You can use it standalone:
+* Download entire project or just __format_price.py__
+* In terminal go: <code>$ python3 format_price.py </code>
+
+Or you can import _format_price_ function to your project.
+
+# Notes
+
+Project includes unit-testing.
 
 # Project Goals
 
