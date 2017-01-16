@@ -27,9 +27,13 @@ You can use it standalone:
 
 Or you can import _format_price_ function to your project.
 
-# Notes
+# Tests
 
-Project includes unit-testing.
+Project includes unit-testing. Checks common inputs and outputs. 
+You can run it with typing in terminal:
+<pre>
+/18_price_format $ python3 tests.py
+</pre>
 
 # Project Goals
 
