@@ -1,19 +1,26 @@
-import sys
+import argparse
+
+
+def create_argument_parser():
+    parser = argparse.ArgumentParser(description='Read price to format.')
+    parser.add_argument('price', help='A price to reformat in a pretty way.')
+    return parser
 
 
 def format_price(price):
     try:
-        absolute_numeric_price = abs(float(price))
-        if absolute_numeric_price.is_integer():
-            return '{:,.0f}'.format(float(absolute_numeric_price)).replace(',',' ')
+        numeric_price = float(price)
+        if numeric_price <= 0:
+            raise ValueError
+        if numeric_price.is_integer():
+            return '{:,.0f}'.format(float(numeric_price)).replace(',', ' ')
         else:
-            return '{:,.2f}'.format(float(absolute_numeric_price)).replace(',',' ')
-    except Exception:
+            return '{:,.2f}'.format(float(numeric_price)).replace(',', ' ')
+    except ValueError:
         return None
 
 
 if __name__ == '__main__':
-    if len(sys.argv) == 1:
-        print(format_price(input()))
-    else:
-        print(format_price(sys.argv[1]))
+    arguments_parser = create_argument_parser()
+    arguments = arguments_parser.parse_args()
+    print(format_price(arguments.price))
