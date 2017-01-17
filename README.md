@@ -7,11 +7,14 @@ Thank you for using my script for formatting prices!
 Script gets a price as input and formats it beautifully, adding spaces between thousands and showing 
 2 digits after dot if they exist:
 <pre>
-3213123
-3 213 123
----------
-2313123.123123
-2 313 123.12
+/18_price_format $ python3 format_price.py 32568734
+32 568 734
+
+/18_price_format python3 format_price.py 32568734.12
+32 568 734.12
+
+/18_price_format $ python3 format_price.py 32568734.12.456
+None
 </pre>
 If script can't handle input data it returns None:
 <pre>
