@@ -7,13 +7,13 @@ Thank you for using my script for formatting prices!
 Script gets a price as input and formats it beautifully, adding spaces between thousands and showing 
 2 digits after dot if they exist:
 <pre>
-/18_price_format $ python3 format_price.py 32568734
+$ python3 format_price.py 32568734
 32 568 734
 
-/18_price_format $ python3 format_price.py 32568734.12
+$ python3 format_price.py 32568734.12
 32 568 734.12
 
-/18_price_format $ python3 format_price.py 32568734.12.456
+$ python3 format_price.py 32568734.12.456
 None
 </pre>
 If script can't handle input data it returns None:
@@ -35,7 +35,7 @@ Or you can import _format_price_ function to your project.
 Project includes unit-testing. Checks common inputs and outputs. 
 You can run it with typing in terminal:
 <pre>
-/18_price_format $ python3 tests.py
+$ python3 tests.py
 </pre>
 
 # Project Goals
