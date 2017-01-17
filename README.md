@@ -16,11 +16,6 @@ $ python3 format_price.py 32568734.12
 $ python3 format_price.py 32568734.12.456
 None
 </pre>
-If script can't handle input data it returns None:
-<pre>
-asdasd
-None
-</pre>
 
 # Installation
 
