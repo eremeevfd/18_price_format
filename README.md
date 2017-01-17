@@ -10,7 +10,7 @@ Script gets a price as input and formats it beautifully, adding spaces between t
 /18_price_format $ python3 format_price.py 32568734
 32 568 734
 
-/18_price_format python3 format_price.py 32568734.12
+/18_price_format $ python3 format_price.py 32568734.12
 32 568 734.12
 
 /18_price_format $ python3 format_price.py 32568734.12.456
